@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tac.css">
+</head>
+
+<body>
+    <div>
+        <h1>Tic Tac Toe</h1>
+    </div>
+    <div class="game">
+        <button id="newg">New Game</button>
+        <div class="container">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+
+        <div id="popup" class="popup" style="display:none;">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2 id="winner-msg"></h2> <!-- ✅ added message element -->
+            </div>
+        </div>
+
+        <button id="resetg">Reset Button</button>
+    </div>
+</body>
+
+<script src="toe.js"></script>
+
+</html>
